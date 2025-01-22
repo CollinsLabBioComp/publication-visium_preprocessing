@@ -1,0 +1,8 @@
+paths:
+  input_file: "<INPUT_FILE>"
+  transcriptome: "<TRANSCRIPTOME>"
+samples: "<SAMPLE_NAMES>"
+fastq_dirs: [<FASTQ_DIR_NAMES>]
+spotclean_radii: [30]
+plot_gene: ['INS']
+spotclean_kernels: ['gaussian']

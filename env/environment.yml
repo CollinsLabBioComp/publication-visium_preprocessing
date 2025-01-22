@@ -1,0 +1,22 @@
+name: visium_preprocessing
+channels:
+  - r
+  - conda-forge
+  - bioconda
+dependencies:
+  - numpy
+  - pandas
+  - argparse
+  - h5py
+  - anndata
+  - scipy
+  - scanpy
+  - bioconductor-spotclean=1.4.1
+  - r-seurat
+  - r-optparse
+  - r-seurat=5.1.0=r43ha18555a_0
+  - r-seuratobject=5.0.2=r43ha18555a_0
+  - r-cowplot
+  - r-sceasy
+  - r-cowplot
+  - r-ggplot2

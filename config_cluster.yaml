@@ -1,0 +1,49 @@
+__default__:
+  mem: "50G"
+  cpus: "20"
+  ntasks: "1"
+  name: "{rule}.{wildcards}"
+  output: "logs/{rule}/smk.{rule}.{wildcards}.out"
+  time: "3:00:00"
+  partition: "quick,norm"
+  gres: "lscratch:10"
+  
+make_fastqs:
+  mem: "50G"
+  cpus: "20"
+  ntasks: "1"
+  gres: "lscratch:100"
+  name: "{rule}.{wildcards}"
+  output: "logs/{rule}/smk.{rule}.{wildcards}.out"
+  time: "24:00:00"
+  partition: "norm"
+  
+spaceranger_count:
+  mem: "50G"
+  cpus: "32"
+  ntasks: "1"
+  gres: "lscratch:100"
+  name: "{rule}.{wildcards}"
+  output: "logs/{rule}/smk.{rule}.{wildcards}.out"
+  time: "24:00:00"
+  partition: "norm"
+
+correct_bleed:
+  mem: "100G"
+  cpus: "20"
+  ntasks: "1"
+  gres: "lscratch:100"
+  name: "{rule}.{wildcards}"
+  output: "logs/{rule}/smk.{rule}.{wildcards}.out"
+  time: "3:00:00"
+  partition: "quick,norm"
+
+convert_anndata:
+  mem: "100G"
+  cpus: "20"
+  ntasks: "1"
+  gres: "lscratch:100"
+  name: "{rule}.{wildcards}"
+  output: "logs/{rule}/smk.{rule}.{wildcards}.out"
+  time: "3:00:00"
+  partition: "quick,norm"
